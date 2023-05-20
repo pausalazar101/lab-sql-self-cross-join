@@ -11,7 +11,6 @@ JOIN sakila.actor a2 ON fa2.actor_id = a2.actor_id
 WHERE a1.actor_id < a2.actor_id;
 
 
-
 SELECT c1.customer_id, c2.customer_id, COUNT(*) AS coincidences
 FROM (
     SELECT r.customer_id, r.inventory_id, i.film_id, f.title
